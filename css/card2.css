@@ -1,0 +1,96 @@
+
+/*  start global rules  */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/*  end global rules  */
+.container{
+    width: 400px;
+    height: 100vh;
+    background-color: #EEEEEE;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    z-index: -2;
+}
+.container .form{
+    display: flex;
+    justify-content: space-between;
+}
+.container .title{
+    margin-top: 30px;
+}
+.title .overview{
+    font-size: 12px;
+    color: #AAABBC;
+}
+.title h3{
+ font-size: 29px;
+}
+.location{
+    margin-top: 40px;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #FFFFFF;
+    position: relative;
+    
+}
+.location::after{
+    content: "";
+    height: 100%;
+    width: calc( 100% - 12px);
+    position: absolute;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    top: -9px;
+    right: 6px;
+    z-index: -1;
+
+}
+.location .text div{
+ color: #0CD16B;
+ font-size: 13px;
+}
+.location .text h4{
+    margin-top: 5px;
+    font-size: 20px;
+    width: 175px;
+}
+.container .image img{
+    width: 320px;
+}
+.container .information{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+.information .feature{
+    font-size: 11px;
+    color: #AAABBC;
+}
+.information .info .value{
+    margin-top: 8px;
+    font-weight: 800;
+}
+.container button{
+    padding: 10px;
+    width: calc( 100% - 60px);
+    background-color: #FDB900;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 28px;
+    position: absolute;
+    right: 30px;
+}
